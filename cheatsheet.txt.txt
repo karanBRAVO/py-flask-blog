@@ -1,11 +1,27 @@
 touch .gitignore
+       #create a file in which you can add file name you wanna ignore 
 git config --global user.name "karan yadav"
 git config --global user.email "your_email@example.com"
+       #generate name and mail
 git init
+       # 
 git add .
+       #add the file in local repo. and stages them for commit . 
+   { to unstage them, use 'git reset HEAD [YOUR-FILE]'0 }
 git commit -m "Initial commit"
+       #commits the tracked changes and prepares them to be pushed to a remote repo. 
+   {to remove this commit and modify them, use 'git reset --soft HEAD~1' and commit file again}
 git status
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-tail<path to id_rsa.pub >  (add this to your GitHub account)
+       #just to check the status of process
+
+
+ [ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ tail<path to id_rsa.pub >  (add this to your GitHub account) ]
+
+
 git remote add orign <ssh url.git>
-git push origin master
+       #sets the new remote
+git remte -v
+       #verifies new remote url
+git push origin master 
+       #pushes changes in your local repo. up to the remote repo. you specified
